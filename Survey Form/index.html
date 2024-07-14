@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Shopee Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title"> Shopee Survey Form</h1>
+      <p id="description"> Please fill up everything, thank you!  </p>
+    <form id="survey-form">
+      <fieldset>
+      
+        <label for="name" id="name-label">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Enter your name" />
+        <label for="email" id="email-label">Email</label>
+        <input id="email" name="email" type="email" required placeholder="Enter your email"/>
+        <label for="age" id="number-label">Age</label>
+        <input id="number" name="age" type="number" required min="1" max="100" placeholder="Enter your age"/>
+      </fieldset>   
+      <fieldset>
+        <label>Frequency of using Shopee </label>
+        <select id="dropdown" name="frequency" required>
+            <option value="">(select one)</option>
+            <option value="Never">Never</option>
+            <option value="Rarely">Rarely</option>
+            <option value="Sometimes">Sometimes</option>
+            <option value="Always">Always</option>
+          </select>
+
+        <label>Average spends (per month) in making purchase at Shopee</label>
+        <label>
+          <input type="radio" value="Below RM100" name="spending" checked> Below RM100</input>
+        <label/>
+
+        <label>      
+          <input type="radio" value="RM100 and above" name="spending"> RM100 and above</input>
+        <label/>
+
+        <label id="otherplatform">
+          Apart from Shopee, which platform have you ever purchased from?(check all that apply)
+        </label>
+
+        <label>
+        <input type="checkbox" value="lazada"> Lazada
+        </input>
+        </label>
+
+        <label>        
+        <input type="checkbox" value="carousell"> Carousell
+        </input>
+        </label>
+
+        <label>
+        <input type="checkbox" value="tiktok"> Tiktok
+        </input>
+        </label>
+        <label>
+        <input type="checkbox" value="facebook"> Facebook
+        </input>
+        </label>
+        <label>
+        <input type="checkbox" value="instagram"> Instagram
+        </input>
+        </label>        
+      </fieldset>   
+      <fieldset>
+        <label>Suggestions or comments to improve our platform</label> 
+        <textarea id="suggestions" name="suggestions" placeholder="Enter your suggestions here..."></textarea>
+        <input type="submit" value="Submit" id="submit"/>
+      </fieldset> 
+    </form>
+  </body>
+</html>
