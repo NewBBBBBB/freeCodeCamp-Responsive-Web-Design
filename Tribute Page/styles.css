@@ -1,3 +1,4 @@
+
 .header {
     text-align: center;
     text-transform: uppercase;
@@ -5,14 +6,37 @@
     background-color: #0a0a23;
     color: #fff;
   }
-  p{
-    text-transform: none;
-  }
-  img {
-  display:block;
-  max-width:100%;
-  height:auto;
-  }
-  .image-caption{
+  
+  #img-div {
     text-align: center;
   }
+  
+  #image {
+    display: inline-block; 
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #img-caption {
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  #tribute-info ul {
+    padding-left: 180px;
+  }
+  
+  #tribute-info li {
+    padding-left: 0px;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  #reference{
+    text-align: center;
+    margin-top: 16px;
+    font-weight: bold;
+  }
+  
